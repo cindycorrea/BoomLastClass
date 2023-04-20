@@ -3,8 +3,8 @@ const routes = require('express').Router();
 const myController = require('../controllers'); 
 
 
-routes.get('/', myController.awesomeFunction);
-routes.get('/list', myController.listAwesomePeople);
+routes.get('/', myController.knownPerson);
+routes.get('/list', myController.listOfMyFavoritePeople);
 
 
 module.exports = routes;
