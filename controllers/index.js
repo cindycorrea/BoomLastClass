@@ -8,5 +8,9 @@ function listOfMyFavoritePeople(req, res, next) {
     res.json('My favorite people are: My husband, Mario (my son), Hannah and Chloe (my daughters), Bellatrix and Charlie (my cats).');
 };
 
+function testConnection(req, res, next) {
+    res.json('This is just a test.')
+};
+
 // Export the file to be used elsewhere
-module.exports = { knownPerson, listOfMyFavoritePeople };
+module.exports = { knownPerson, listOfMyFavoritePeople, testConnection };

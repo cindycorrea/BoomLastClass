@@ -1,5 +1,11 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
+const connectDB = require('./mongoDBconnection/connection');
+
+// Connect to the MongoDB database
+connectDB();
+
+app.use('/api/userModel', require('./API/User'));
 
 // Run on Render's provided port OR
 // port 3000 on my localhost
@@ -12,4 +18,4 @@ app.use('/', require('./routes'));
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
- 
+

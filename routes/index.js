@@ -7,6 +7,7 @@ const myController = require('../controllers');
 // controllers files
 routes.get('/', myController.knownPerson);
 routes.get('/list', myController.listOfMyFavoritePeople);
+routes.get('/test', myController.testConnection);
 
 // Export this file to be used by the server.js file
 module.exports = routes;

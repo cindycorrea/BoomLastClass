@@ -4,7 +4,14 @@ GET http://localhost:3000 HTTP/1.1
 GET http://localhost:3000/list HTTP/1.1
 
 ###
+GET http://localhost:3000/test HTTP/1.1
+
+###
 GET https://ccorreatest.onrender.com HTTP/1.1
 
 ###
 GET https://ccorreatest.onrender.com/list HTTP/1.1
+
+###
+GET https://ccorreatest.onrender.com/test HTTP/1.1
+
