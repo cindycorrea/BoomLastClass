@@ -9,9 +9,6 @@ const app = express();
 // get the information in the MongoDB connection file
 const mongoDB = require('./mongoDB/connection');
 
-// Connect to the MongoDB 
-// mongoDB.connectDB();
-
 // Run on Render's provided port OR
 // port 3000 on my localhost
 const port = process.env.PORT || 3000;

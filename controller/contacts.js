@@ -12,7 +12,7 @@ const listAllContacts = async (request, response) => {
     // console.log(resultArray);
 
     // // Send the result as a JSON response
-    response.json("It should be in the console.");
+    response.json(resultArray);
   } catch (error) {
     console.error('Error:', error);
     response.status(500).json({ error: 'Internal Server Error' });
@@ -29,10 +29,10 @@ const singleContact = async (request, response) => {
     const resultArray = await result.toArray();
 
     // // Log the result to the console
-    console.log(resultArray);
+    // console.log(resultArray);
     
     // // Send the result as a JSON response
-    response.json("A single contact should be in the console.");
+    response.json(resultArray);
   } catch (error) {
     console.error('Error:', error);
     response.status(500).json({ error: 'Internal Server Error' });
