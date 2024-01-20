@@ -7,10 +7,9 @@ const controller = require('../controller/index');
 
 // Utilize individual functions from the
 // controllers folder
+// express router functionality variable.get('the route', 
+// controller is a reference to the controller index file.the function to use)
 router.get('/', controller.knownPerson);
-router.get('/list', controller.listOfMyFavoritePeople);
-router.get('/test', controller.testConnection);
-router.get('/api/userModel', controller.apiController);
 
 // Export this file to be used by the server.js file
-module.exports = router;
+// module.exports = router;

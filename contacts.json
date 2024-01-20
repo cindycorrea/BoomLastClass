@@ -1,0 +1,23 @@
+[
+  {
+    "firstName": "Harry",
+    "lastName": "Potter",
+    "email": "potterhead@gmail.com",
+    "favoriteColor": "orange",
+    "birthday": "July 31, 1980"
+  },
+  {
+    "firstName": "Hermione",
+    "lastName": "Granger",
+    "email": "smartypants@gmail.com",
+    "favoriteColor": "Red",
+    "birthday": "September 19, 1979"
+  },
+  {
+    "firstName": "Ron",
+    "lastName": "Weasley",
+    "email": "ronnieboy@gmail.com",
+    "favoriteColor": "Yellow",
+    "birthday": "March 1, 1980"
+  }
+]
