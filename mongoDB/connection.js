@@ -5,8 +5,7 @@ async function connectDB() {
 
   const URI = process.env.URI;
   const client = new MongoClient(URI);
-  console.log(`My URI is ${URI}`);
-  console.log(`Client information: ${client}`);
+  console.log(client);
 
   try {
     await client.connect();
