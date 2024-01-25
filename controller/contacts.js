@@ -8,6 +8,7 @@ const listAllContacts = async (request, response) => {
   try {
     // Assign collection location
     const collection = client.db("test").collection("contacts");
+    console.log('Collection defined');
 
     // Find all documents in the collection
     const result = collection.find();
