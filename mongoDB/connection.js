@@ -2,10 +2,11 @@ const { MongoClient } = require("mongodb");
 const dotenv = require("dotenv").config();
 
 async function connectDB() {
-  console.log('Please work')
 
   const URI = process.env.URI;
   const client = new MongoClient(URI);
+  console.log(`My URI is ${URI}`);
+  console.log(`Client information: ${client}`);
 
   try {
     await client.connect();
