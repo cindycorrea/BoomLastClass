@@ -4,6 +4,7 @@ const ObjectId = require("mongodb").ObjectId;
 const listAllContacts = async (request, response) => {
   // Connect to MongoDB
   const client = await mongoDB.connectDB();
+  console.log(client);
 
   try {
     // Assign collection location

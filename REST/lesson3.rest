@@ -1,0 +1,29 @@
+
+// Local Host:
+
+### Retrieve all contacts 
+GET http://localhost:3000 HTTP/1.1
+
+### Create a new contact
+POST http://localhost:3000/newContact HTTP/1.1
+
+### Update the new contact (change id)
+PUT http://localhost:3000/updateContact/65b2ad55b002c3ae133d58ce HTTP/1.1
+
+### Delete the new client (change id)
+DELETE http://localhost:3000/deleteContact/65b2ad55b002c3ae133d58ce HTTP/1.1
+
+
+// Render
+
+### Retrieve all contacts
+GET https://boomlastclass-project.onrender.com HTTP/1.1
+
+### Create a new contact
+POST https://boomlastclass-project.onrender.com/newContact HTTP/1.1
+
+### Update the new contact (change id)
+PUT https://boomlastclass-project.onrender.com/updateContact/:id HTTP/1.1
+
+### Delete the new client (change id)
+DELETE https://boomlastclass-project.onrender.com/deleteContact/:id HTTP/1.1
