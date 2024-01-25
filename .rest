@@ -25,3 +25,13 @@ GET https://boomlastclass-project.onrender.com/single/65ac09e3c74b0c77782ea4bf H
 ###
 GET https://boomlastclass-project.onrender.com/single/65ac09e3c74b0c77782ea4c0 HTTP/1.1
 
+// Post
+
+###
+POST http://localhost:3000/newContact HTTP/1.1
+
+###
+PUT http://localhost:3000/updateContact/65b2a8757beeae8537544ad9 HTTP/1.1
+
+###
+DELETE http://localhost:3000/deleteContact/65b2a8757beeae8537544ad9 HTTP/1.1
