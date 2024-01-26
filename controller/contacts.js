@@ -56,18 +56,18 @@ const createNewContact = async (request, response) => {
   // Connect to MongoDB
   const client = await mongoDB.connectDB();
 
+  // The newContact to insert
+  const newContact = {
+    firstName: request.body.firstName,
+    lastName: request.body.lastName,
+    email: request.body.email,
+    favoriteColor: request.body.favoriteColor,
+    birthday: request.body.birthday,
+  };
+
   try {
     // Assign collection location
     const collection = client.db("test").collection("contacts");
-
-    // The newContact to insert
-    let newContact = {
-      firstName: "Luna",
-      lastName: "Lovegood",
-      email: "nargles@gmail.com",
-      favoriteColor: "purple",
-      birthday: "February 15, 1981",
-    };
 
     // Insert newContact and return a result
     const result = await collection.insertOne(newContact);

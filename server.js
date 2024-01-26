@@ -1,5 +1,6 @@
 // Express is a framework to run a node.js API on
 const express = require('express');
+const bodyParser = require('body-parser');
 
 const dotenv = require('dotenv').config();
 
@@ -15,7 +16,9 @@ const port = process.env.PORT || 3000;
 
 // import routes mini application
 // app.use('/', require('./routes'));
+app.use(bodyParser.json())
 app.use('/', require('./routes/contacts'));
+
 
 // Establish a connection to the port nodemon watches for changes
 app.listen(port, () => {

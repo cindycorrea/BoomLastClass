@@ -6,12 +6,21 @@ GET http://localhost:3000 HTTP/1.1
 
 ### Create a new contact
 POST http://localhost:3000/newContact HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Luna",
+    "lastName": "Lovegood",
+    "email": "nargles@gmail.com",
+    "favoriteColor": "purple",
+    "birthday": "February 15, 1981"
+}
 
 ### Update the new contact (change id)
-PUT http://localhost:3000/updateContact/65b2ad55b002c3ae133d58ce HTTP/1.1
+PUT http://localhost:3000/updateContact/65b43390c5706cc796740f7b HTTP/1.1
 
 ### Delete the new client (change id)
-DELETE http://localhost:3000/deleteContact/65b2ad55b002c3ae133d58ce HTTP/1.1
+DELETE http://localhost:3000/deleteContact/65b43390c5706cc796740f7b HTTP/1.1
 
 
 // Render
@@ -19,11 +28,21 @@ DELETE http://localhost:3000/deleteContact/65b2ad55b002c3ae133d58ce HTTP/1.1
 ### Retrieve all contacts
 GET https://boomlastclass-project.onrender.com HTTP/1.1
 
+
 ### Create a new contact
 POST https://boomlastclass-project.onrender.com/newContact HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Luna",
+    "lastName": "Lovegood",
+    "email": "nargles@gmail.com",
+    "favoriteColor": "purple",
+    "birthday": "February 15, 1981",
+}
 
 ### Update the new contact (change id)
-PUT https://boomlastclass-project.onrender.com/updateContact/:id HTTP/1.1
+PUT https://boomlastclass-project.onrender.com/65b43063cee3be50fc37fdd7 HTTP/1.1
 
 ### Delete the new client (change id)
-DELETE https://boomlastclass-project.onrender.com/deleteContact/:id HTTP/1.1
+DELETE https://boomlastclass-project.onrender.com/deleteContact/65b43063cee3be50fc37fdd7 HTTP/1.1
