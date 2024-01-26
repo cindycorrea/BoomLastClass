@@ -17,10 +17,10 @@ content-type: application/json
 }
 
 ### Update the new contact (change id)
-PUT http://localhost:3000/updateContact/65b43390c5706cc796740f7b HTTP/1.1
+PUT http://localhost:3000/updateContact/65b4366940ed224d9ee32856 HTTP/1.1
 
 ### Delete the new client (change id)
-DELETE http://localhost:3000/deleteContact/65b43390c5706cc796740f7b HTTP/1.1
+DELETE http://localhost:3000/deleteContact/65b4366940ed224d9ee32856 HTTP/1.1
 
 
 // Render
@@ -42,7 +42,7 @@ content-type: application/json
 }
 
 ### Update the new contact (change id)
-PUT https://boomlastclass-project.onrender.com/65b43063cee3be50fc37fdd7 HTTP/1.1
+PUT https://boomlastclass-project.onrender.com/updateContact/65b43063cee3be50fc37fdd7 HTTP/1.1
 
 ### Delete the new client (change id)
 DELETE https://boomlastclass-project.onrender.com/deleteContact/65b43063cee3be50fc37fdd7 HTTP/1.1
