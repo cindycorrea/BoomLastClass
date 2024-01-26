@@ -17,10 +17,10 @@ content-type: application/json
 }
 
 ### Update the new contact (change id)
-PUT http://localhost:3000/updateContact/65b4366940ed224d9ee32856 HTTP/1.1
+PUT http://localhost:3000/updateContact/65b43fcacd65e046a1a0f15e HTTP/1.1
 
 ### Delete the new client (change id)
-DELETE http://localhost:3000/deleteContact/65b4366940ed224d9ee32856 HTTP/1.1
+DELETE http://localhost:3000/deleteContact/65b43fcacd65e046a1a0f15e HTTP/1.1
 
 
 // Render
@@ -38,11 +38,11 @@ content-type: application/json
     "lastName": "Lovegood",
     "email": "nargles@gmail.com",
     "favoriteColor": "purple",
-    "birthday": "February 15, 1981",
+    "birthday": "February 15, 1981"
 }
 
 ### Update the new contact (change id)
-PUT https://boomlastclass-project.onrender.com/updateContact/65b43063cee3be50fc37fdd7 HTTP/1.1
+PUT https://boomlastclass-project.onrender.com/updateContact/65b43b4ddf5f4ce674c69032 HTTP/1.1
 
 ### Delete the new client (change id)
-DELETE https://boomlastclass-project.onrender.com/deleteContact/65b43063cee3be50fc37fdd7 HTTP/1.1
+DELETE https://boomlastclass-project.onrender.com/deleteContact/65b43b4ddf5f4ce674c69032 HTTP/1.1
