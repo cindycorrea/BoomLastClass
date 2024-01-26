@@ -7,13 +7,11 @@ async function connectDB() {
 
   try {
     await client.connect();
-    console.log("It worked!");
-    console.log(client);
-    return client;
+    
   } catch (error) {
     console.error("Hey we are not doing great here.", error);
-    return client;
   }
+  return client;
 }
 
 module.exports = { connectDB };
