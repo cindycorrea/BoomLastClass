@@ -1,5 +1,6 @@
 // Express is a framework to run a node.js API on
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 
 const dotenv = require('dotenv').config();
