@@ -5,10 +5,9 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "https://boomlastclass-project.onrender.com",
+  "host": "boomlastclass-project.onrender.com",
   "basePath": "/",
   "schemes": [
-    "https",
     "http"
   ],
   "paths": {

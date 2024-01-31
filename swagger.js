@@ -5,8 +5,8 @@ const doc = {
     title: 'My API',
     description: 'Description'
   },
-  host: 'https://boomlastclass-project.onrender.com',
-  schemes: ['https', 'http']
+  host: 'boomlastclass-project.onrender.com',
+  schemes: ['http']
 };
 
 const outputFile = './swagger-output.json';
