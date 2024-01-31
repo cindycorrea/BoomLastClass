@@ -17,7 +17,16 @@ content-type: application/json
 }
 
 ### Update the new contact (change id)
-PUT http://localhost:3000/updateContact/65b43fcacd65e046a1a0f15e HTTP/1.1
+PUT http://localhost:3000/updateContact/65bab15d7785cf7c7a844131 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Luna",
+    "lastName": "Lovegood",
+    "email": "quibbler@gmail.com",
+    "favoriteColor": "purple",
+    "birthday": "February 15, 1981"
+}
 
 ### Delete the new client (change id)
 DELETE http://localhost:3000/deleteContact/65b43fcacd65e046a1a0f15e HTTP/1.1
@@ -42,7 +51,7 @@ content-type: application/json
 }
 
 ### Update the new contact (change id)
-PUT https://boomlastclass-project.onrender.com/updateContact/65b43b4ddf5f4ce674c69032 HTTP/1.1
+PUT https://boomlastclass-project.onrender.com/updateContact/65b442c8c694979da8600afa HTTP/1.1
 
 ### Delete the new client (change id)
-DELETE https://boomlastclass-project.onrender.com/deleteContact/65b43b4ddf5f4ce674c69032 HTTP/1.1
+DELETE https://boomlastclass-project.onrender.com/deleteContact/65b442c8c694979da8600afa HTTP/1.1

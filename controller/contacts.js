@@ -27,6 +27,9 @@ const listAllContacts = async (request, response) => {
 
 const singleContact = async (request, response) => {
   // Connect to MongoDB
+  /*
+    #swagger.description = Hello World!
+  */
   const client = await mongoDB.connectDB();
 
   try {
@@ -93,13 +96,21 @@ const updateContact = async (request, response) => {
     const collection = client.db("test").collection("contacts");
     // Process the id from the URL
     const userId = new ObjectId(request.params.id);
-
+    
     // Create a filter to find the correct document to update
     const filter = { _id: userId };
 
     // The new email address
-    const newEmail = "quibbler@gmail.com";
-    const update = { $set: { email: newEmail } };
+    // const newEmail = "quibbler@gmail.com";
+    const update = {
+      $set: {
+        firstName: request.body.firstName,
+        lastName: request.body.lastName,
+        email: request.body.email,
+        favoriteColor: request.body.favoriteColor,
+        birthday: request.body.birthday,
+      },
+    };
 
     // Find the document and update
     const result = await collection.findOneAndUpdate(filter, update);

@@ -7,6 +7,9 @@ const dotenv = require('dotenv').config();
 // start express
 const app = express();
 
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger-output.json');
+
 // get the information in the MongoDB connection file
 const mongoDB = require('./mongoDB/connection');
 
@@ -18,7 +21,7 @@ const port = process.env.PORT || 3000;
 // app.use('/', require('./routes'));
 app.use(bodyParser.json())
 app.use('/', require('./routes/contacts'));
-
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Establish a connection to the port nodemon watches for changes
 app.listen(port, () => {
