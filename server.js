@@ -20,6 +20,7 @@ const port = process.env.PORT || 3000;
 // import routes mini application
 // app.use('/', require('./routes'));
 app.use(bodyParser.json())
+app.use(cors())
 app.use('/', require('./routes/contacts'));
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
