@@ -3,7 +3,7 @@ const router = require('express').Router(); // http: localhost:3000
 
 const contactsController = require('../controller/contacts');
 
-router.get('/', contactsController.listAllContacts);
+router.get('/contacts', contactsController.listAllContacts);
 router.get('/single/:id', contactsController.singleContact);
 router.post('/newContact', contactsController.createNewContact);
 router.put('/updateContact/:id', contactsController.updateContact);

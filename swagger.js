@@ -2,8 +2,8 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
   info: {
-    title: 'My API',
-    description: 'Description'
+    title: 'My Contacts',
+    description: 'Contact information for some of my favorite Harry Potter characters.'
   },
   host: 'boomlastclass-project.onrender.com',
   schemes: ['https']
