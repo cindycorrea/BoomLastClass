@@ -24,6 +24,10 @@ app.use(bodyParser.json())
 app.use(cors())
 app.use('/', require('./routes/contacts'));
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    next();
+  })
 
 // Establish a connection to the port nodemon watches for changes
 app.listen(port, () => {

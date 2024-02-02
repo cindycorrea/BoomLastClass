@@ -3,7 +3,7 @@
     "firstName": "Harry",
     "lastName": "Potter",
     "email": "potterhead@gmail.com",
-    "favoriteColor": "orange",
+    "favoriteColor": "Orange",
     "birthday": "July 31, 1980"
   },
   {
@@ -19,5 +19,75 @@
     "email": "ronnieboy@gmail.com",
     "favoriteColor": "Yellow",
     "birthday": "March 1, 1980"
+  },
+  {
+    "firstName": "Molly",
+    "lastName": "Weasley",
+    "email": "makinmagic@gmail.com",
+    "favoriteColor": "Red",
+    "birthday": "October 30, 1949"
+  },
+  {
+    "firstName": "Lily",
+    "lastName": "Potter",
+    "email": "lilyfish@gmail.com",
+    "favoriteColor": "Blue",
+    "birthday": "January 30, 1960"
+  },
+  {
+    "firstName": "James",
+    "lastName": "Potter",
+    "email": "ihatesnape@gmail.com",
+    "favoriteColor": "Dark Red",
+    "birthday": "March 27, 1960"
+  },
+  {
+    "firstName": "Severus",
+    "lastName": "Snape",
+    "email": "ihatejames@gmail.com",
+    "favoriteColor": "Darkness",
+    "birthday": "January 9, 1960"
+  },
+  {
+    "firstName": "Draco",
+    "lastName": "Malfoy",
+    "email": "myfatherwillhearaboutthis@gmail.com",
+    "favoriteColor": "Green",
+    "birthday": "June 5, 1980"
+  },
+  {
+    "firstName": "Dobby",
+    "lastName": "the House Elf",
+    "email": "masterhasgivendobbyasock@gmail.com",
+    "favoriteColor": "White",
+    "birthday": "June 28, ????"
+  },
+  {
+    "firstName": "Neville",
+    "lastName": "Longbottom",
+    "email": "ikillednagini@gmail.com",
+    "favoriteColor": "Silver",
+    "birthday": "July 30, 1980"
+  },
+  {
+    "firstName": "Ginny",
+    "lastName": "Weasley",
+    "email": "iloveharrypotter@gmail.com",
+    "favoriteColor": "Purple",
+    "birthday": "August 11, 1981"
+  },
+  {
+    "firstName": "Albus",
+    "lastName": "Dumbledore",
+    "email": "bestbeardever@gmail.com",
+    "favoriteColor": "Purple",
+    "birthday": "August 29, 1881"
+  },
+  {
+    "firstName": "Minerva",
+    "lastName": "McGonagall",
+    "email": "imareallyoldcat@gmail.com",
+    "favoriteColor": "Green",
+    "birthday": "October 4, 1912"
   }
 ]
