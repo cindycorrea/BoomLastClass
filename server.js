@@ -25,10 +25,10 @@ app.use(cors());
 app.use("/", require("./routes/contacts"));
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use((request, response, next) => {
-  response.setHeader("Access-Control-Allow-Origin", "https://boomlastclass-project.onrender.com");
+  response.setHeader("Access-Control-Allow-Origin", "*");
   response.setHeader(
     "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-type, Accept, Z-Key"
+    "Origin, X-Requested-With, Content-Type, Accept, Z-Key"
   );
   response.setHeader('Content-Type', 'application/json');
   response.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
