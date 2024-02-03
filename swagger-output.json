@@ -22,30 +22,7 @@
             "description": "Internal Server Error"
           }
         }
-      }
-    },
-    "/single/{id}": {
-      "get": {
-        "description": "Hello World!",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      }
-    },
-    "/newContact": {
+      },
       "post": {
         "description": "",
         "parameters": [
@@ -84,7 +61,26 @@
         }
       }
     },
-    "/updateContact/{id}": {
+    "/contacts/{id}": {
+      "get": {
+        "description": "Hello World!",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
       "put": {
         "description": "",
         "parameters": [
@@ -127,9 +123,7 @@
             "description": "Internal Server Error"
           }
         }
-      }
-    },
-    "/deleteContact/{id}": {
+      },
       "delete": {
         "description": "",
         "parameters": [
