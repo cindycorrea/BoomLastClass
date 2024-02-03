@@ -13,7 +13,7 @@
   "paths": {
     "/contacts": {
       "get": {
-        "description": "",
+        "description": "Display all the Harry Potter Characters",
         "responses": {
           "200": {
             "description": "OK"
@@ -24,7 +24,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "Create a new character in the Harry Potter database",
         "parameters": [
           {
             "name": "body",
@@ -63,7 +63,7 @@
     },
     "/contacts/{id}": {
       "get": {
-        "description": "Hello World!",
+        "description": "Pulling a single Harry Potter Character with their ID",
         "parameters": [
           {
             "name": "id",
@@ -82,7 +82,7 @@
         }
       },
       "put": {
-        "description": "",
+        "description": "Update a single Harry Potter Character with their ID",
         "parameters": [
           {
             "name": "id",
@@ -125,7 +125,7 @@
         }
       },
       "delete": {
-        "description": "",
+        "description": "Delete a single Harry Potter Character with their ID",
         "parameters": [
           {
             "name": "id",

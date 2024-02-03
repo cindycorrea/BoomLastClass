@@ -2,6 +2,9 @@ const mongoDB = require("../mongoDB/connection");
 const ObjectId = require("mongodb").ObjectId;
 
 const listAllContacts = async (request, response) => {
+  /*
+    #swagger.description = Display all the Harry Potter Characters
+  */
   // Connect to MongoDB
   const client = await mongoDB.connectDB();
 
@@ -26,10 +29,10 @@ const listAllContacts = async (request, response) => {
 };
 
 const singleContact = async (request, response) => {
-  // Connect to MongoDB
   /*
-    #swagger.description = Hello World!
+    #swagger.description = Pulling a single Harry Potter Character with their ID
   */
+ // Connect to MongoDB
   const client = await mongoDB.connectDB();
 
   try {
@@ -56,6 +59,9 @@ const singleContact = async (request, response) => {
 };
 
 const createNewContact = async (request, response) => {
+  /*
+    #swagger.description = Create a new character in the Harry Potter database
+  */
   // Connect to MongoDB
   const client = await mongoDB.connectDB();
 
@@ -88,6 +94,9 @@ const createNewContact = async (request, response) => {
 };
 
 const updateContact = async (request, response) => {
+  /*
+    #swagger.description = Update a single Harry Potter Character with their ID
+  */
   // Connect to MongoDB
   const client = await mongoDB.connectDB();
 
@@ -126,6 +135,9 @@ const updateContact = async (request, response) => {
 };
 
 const deleteUser = async (request, response) => {
+  /*
+    #swagger.description = Delete a single Harry Potter Character with their ID
+  */
   // Connect to MongoDB
   const client = await mongoDB.connectDB();
 
