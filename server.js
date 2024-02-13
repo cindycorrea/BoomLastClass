@@ -18,8 +18,6 @@ const mongoDB = require("./mongoDB/connection");
 // port 3000 on my localhost
 const port = process.env.PORT || 3000;
 
-// import routes mini application
-// app.use('/', require('./routes'));
 app.use(bodyParser.json());
 app.use(cors());
 app.use("/", require("./routes/contacts"));

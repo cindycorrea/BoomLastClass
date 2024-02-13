@@ -1,29 +1,29 @@
 // Contacts:
 
 ### Retrieve all documents 
-GET http://localhost:3000 HTTP/1.1
+GET http://localhost:3000/contacts HTTP/1.1
 
 ### Retrieve Harry Potter
-GET http://localhost:3000/single/65ac09e3c74b0c77782ea4be HTTP/1.1
+GET http://localhost:3000/contacts/65bd2d0599c70bb1083a2989 HTTP/1.1
 
 ### Retrieve Hermione Granger
-GET http://localhost:3000/single/65ac09e3c74b0c77782ea4bf HTTP/1.1
+GET http://localhost:3000/contacts/65bd2d0599c70bb1083a298a HTTP/1.1
 
 ### Retrieve Ron Weasley
-GET http://localhost:3000/single/65ac09e3c74b0c77782ea4c0 HTTP/1.1
+GET http://localhost:3000/contacts/65bd2d0599c70bb1083a298b HTTP/1.1
 
 
 
 // Render: 
 ### Retrieve all contacts
-GET https://boomlastclass-project.onrender.com HTTP/1.1
+GET https://boomlastclass-project.onrender.com/contacts HTTP/1.1
 
 ### Retrieve Harry Potter
-GET https://boomlastclass-project.onrender.com/single/65ac09e3c74b0c77782ea4be HTTP/1.1
+GET https://boomlastclass-project.onrender.com/contacts/65bd2d0599c70bb1083a2989 HTTP/1.1
 
 ### Retrieve Hermione Granger
-GET https://boomlastclass-project.onrender.com/single/65ac09e3c74b0c77782ea4bf HTTP/1.1
+GET https://boomlastclass-project.onrender.com/contacts/65bd2d0599c70bb1083a298a HTTP/1.1
 
 ### Retrieve Ron Weasley
-GET https://boomlastclass-project.onrender.com/single/65ac09e3c74b0c77782ea4c0 HTTP/1.1
+GET https://boomlastclass-project.onrender.com/contacts/65bd2d0599c70bb1083a298b HTTP/1.1
 

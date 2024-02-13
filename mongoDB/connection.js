@@ -1,17 +1,22 @@
-const { MongoClient } = require("mongodb");
+// const { MongoClient } = require("mongodb");
+const mongoose = require('mongoose');
 const dotenv = require("dotenv").config();
 
-async function connectDB() {
-  const URI = process.env.URI;
-  const client = new MongoClient(URI);
+// Connect to MongoDB
+mongoose.connect(process.env.URI);
+console.log('Connection successful.')
 
-  try {
-    await client.connect();
-    
-  } catch (error) {
-    console.error("Hey we are not doing great here.", error);
-  }
-  return client;
-}
+// Close Mongoose connection on SIGINT (Ctrl+C)
+process.on('SIGINT', () => {
+  mongoose.connection.close(() => {
+    console.log('Mongoose connection closed due to app termination');
+    process.exit(0);
+  });
+});
 
-module.exports = { connectDB };
+const dbConnection = mongoose.connection;
+
+// module.exports = { connectDB };
+module.exports = dbConnection;
+
+
